@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/test-react3/static/css/main.ee74b4cc.chunk.css",
-    "main.js": "/test-react3/static/js/main.543acfbf.chunk.js",
-    "main.js.map": "/test-react3/static/js/main.543acfbf.chunk.js.map",
-    "runtime-main.js": "/test-react3/static/js/runtime-main.2b227aae.js",
-    "runtime-main.js.map": "/test-react3/static/js/runtime-main.2b227aae.js.map",
-    "static/js/2.b7a29134.chunk.js": "/test-react3/static/js/2.b7a29134.chunk.js",
-    "static/js/2.b7a29134.chunk.js.map": "/test-react3/static/js/2.b7a29134.chunk.js.map",
-    "index.html": "/test-react3/index.html",
-    "static/css/main.ee74b4cc.chunk.css.map": "/test-react3/static/css/main.ee74b4cc.chunk.css.map",
-    "static/js/2.b7a29134.chunk.js.LICENSE.txt": "/test-react3/static/js/2.b7a29134.chunk.js.LICENSE.txt"
+    "main.css": "/curso-intro/static/css/main.ee74b4cc.chunk.css",
+    "main.js": "/curso-intro/static/js/main.543acfbf.chunk.js",
+    "main.js.map": "/curso-intro/static/js/main.543acfbf.chunk.js.map",
+    "runtime-main.js": "/curso-intro/static/js/runtime-main.f8fde7bf.js",
+    "runtime-main.js.map": "/curso-intro/static/js/runtime-main.f8fde7bf.js.map",
+    "static/js/2.b7a29134.chunk.js": "/curso-intro/static/js/2.b7a29134.chunk.js",
+    "static/js/2.b7a29134.chunk.js.map": "/curso-intro/static/js/2.b7a29134.chunk.js.map",
+    "index.html": "/curso-intro/index.html",
+    "static/css/main.ee74b4cc.chunk.css.map": "/curso-intro/static/css/main.ee74b4cc.chunk.css.map",
+    "static/js/2.b7a29134.chunk.js.LICENSE.txt": "/curso-intro/static/js/2.b7a29134.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.2b227aae.js",
+    "static/js/runtime-main.f8fde7bf.js",
     "static/js/2.b7a29134.chunk.js",
     "static/css/main.ee74b4cc.chunk.css",
     "static/js/main.543acfbf.chunk.js"
