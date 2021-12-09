@@ -14,7 +14,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "percy exec -- testcafe chrome tests",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
@@ -38,7 +38,10 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^3.2.3"
+    "@percy/cli": "^1.0.0-beta.71",
+    "@percy/testcafe": "^1.0.1",
+    "gh-pages": "^3.2.3",
+    "testcafe": "^1.17.1"
   },
   "homepage": "https://marialbert.github.io/test-react3"
 }
