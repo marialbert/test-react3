@@ -13,7 +13,6 @@ jobs:
 
       - name: 'Building web application to be tested'
         run: npm install
-
       - shell: pwsh
         env:
           PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
