@@ -1,15 +1,12 @@
-- name: "First example"
-  url: https://marialbert.github.io/test-react3
-
-
 name: End-to-End Tests
 on: [push]
-
 env:
         BROWSERSTACK_ACCESS_KEY: "${{ secrets.BROWSERSTACK_ACCESS_KEY }}"
         BROWSERSTACK_USERNAME: "${{ secrets.BROWSERSTACK_USERNAME }}"
-
 jobs:
   test:
     name: Run TestCafe Tests
     runs-on: windows-latest
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v1
