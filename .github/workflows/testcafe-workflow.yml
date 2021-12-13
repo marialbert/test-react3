@@ -17,8 +17,7 @@ jobs:
       - shell: bash
         env:
           PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
-        run: |
-          example-command "$PERCY_TOKEN"
+        run: "$PERCY_TOKEN"
 
       - name: Run TestCafe tests
 
