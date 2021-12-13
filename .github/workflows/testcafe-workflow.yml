@@ -11,6 +11,6 @@ jobs:
       - name: Check out the repository
         uses: actions/checkout@v1
       - name: Run tests
-        uses: marialbert/testcafe-action@latest
+        uses: ./
         with:
             args: "chrome tests"
