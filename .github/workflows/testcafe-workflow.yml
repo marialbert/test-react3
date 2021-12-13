@@ -16,5 +16,5 @@ jobs:
         run: npm install
 
       - name: Run TestCafe tests
-        run: "$env:PERCY_TOKEN"
+        run: "$Env:PERCY_TOKEN"
         run: npm run test
