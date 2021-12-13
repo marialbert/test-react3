@@ -17,8 +17,7 @@ jobs:
       - shell: pwsh
         env:
           PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
-        run: $Env:PERCY_TOKEN="PERCY_TOKEN"
 
       - name: Run TestCafe tests
-
+        run: $Env:PERCY_TOKEN="PERCY_TOKEN"
         run: npm run test
