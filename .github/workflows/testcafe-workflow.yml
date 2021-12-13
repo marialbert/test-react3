@@ -1,17 +1,22 @@
 name: End-to-End tests
 on: [push, pull_request]
 env:
-        PERCY_TOKEN: "${{ secrets.PERCY_TOKEN }}"
         BROWSERSTACK_ACCESS_KEY: "${{ secrets.BROWSERSTACK_ACCESS_KEY }}"
         BROWSERSTACK_USERNAME: "${{ secrets.BROWSERSTACK_USERNAME }}"
 jobs:
   test:
     name: Run TestCafe tests
     runs-on: windows-latest
+    env:
+        PERCY_TOKEN: "${{ secrets.PERCY_TOKEN }}"
     steps:
       - name: Check out the repository
         uses: actions/checkout@v1
-      - name: Run tests
-        uses: actions/checkout@v1
+
+      - name: 'Building web application to be tested'
+        run: npm install
+
+      - name: Run TestCafe Tests
+        uses: DevExpress/testcafe-action@latest
         with:
             args: "chrome tests"
