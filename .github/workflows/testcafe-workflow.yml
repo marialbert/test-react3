@@ -19,5 +19,5 @@ jobs:
           PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
 
       - name: Run TestCafe tests
-        run: $Env:PERCY_TOKEN="PERCY_TOKEN"
+        uses: $Env:PERCY_TOKEN="PERCY_TOKEN"
         run: npm run test
