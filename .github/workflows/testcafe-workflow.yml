@@ -3,7 +3,7 @@ on: [push, pull_request]
 env:
         BROWSERSTACK_ACCESS_KEY: "${{ secrets.BROWSERSTACK_ACCESS_KEY }}"
         BROWSERSTACK_USERNAME: "${{ secrets.BROWSERSTACK_USERNAME }}"
-        PERCY_TOKEN: "${{ secrets.PERCY_TOKEN }}"
+        PERCY_TOKEN: "${{ secrets.PERCY_TOKEN }}"        
 jobs:
   test:
     name: Run TestCafe tests
@@ -16,4 +16,5 @@ jobs:
         run: npm install
 
       - name: Run TestCafe tests
+        run: "$env:PERCY_TOKEN"
         run: npm run test
