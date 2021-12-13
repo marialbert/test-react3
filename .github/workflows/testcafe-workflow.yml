@@ -1,11 +1,11 @@
-name: End-to-End Tests
+name: End-to-End tests
 on: [push]
 env:
         BROWSERSTACK_ACCESS_KEY: "${{ secrets.BROWSERSTACK_ACCESS_KEY }}"
         BROWSERSTACK_USERNAME: "${{ secrets.BROWSERSTACK_USERNAME }}"
 jobs:
   test:
-    name: Run TestCafe Tests
+    name: Run TestCafe tests
     runs-on: windows-latest
     steps:
       - name: Check out the repository
