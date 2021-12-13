@@ -1,6 +1,7 @@
 name: End-to-End tests
 on: [push, pull_request]
 env:
+        PERCY_TOKEN: "${{ secrets.PERCY_TOKEN }}"
         BROWSERSTACK_ACCESS_KEY: "${{ secrets.BROWSERSTACK_ACCESS_KEY }}"
         BROWSERSTACK_USERNAME: "${{ secrets.BROWSERSTACK_USERNAME }}"
 jobs:
@@ -11,6 +12,6 @@ jobs:
       - name: Check out the repository
         uses: actions/checkout@v1
       - name: Run tests
-        uses: ./
+        uses: marialbert/test-react3
         with:
             args: "chrome tests"
