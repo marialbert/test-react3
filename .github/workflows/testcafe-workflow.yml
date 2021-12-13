@@ -20,5 +20,4 @@ jobs:
         run: $Env:PERCY_TOKEN="secrets.PERCY_TOKEN"
 
       - name: Run TestCafe tests
-        with:
-            args: "chrome tests"
+        run: npm run test
