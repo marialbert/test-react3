@@ -12,7 +12,7 @@ jobs:
       - name: Check out the repository
         uses: actions/checkout@v1
 
-      - name: 'Building web application to be tested'
+      - name: 'Building web application to be testedd'
         run: npm install
 
       - name: Run TestCafe tests
