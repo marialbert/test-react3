@@ -13,11 +13,9 @@ jobs:
 
       - name: 'Building web application to be tested'
         run: npm install
-
       - shell: pwsh
         env:
           PERCY: ${{ secrets.PERCY_TOKEN }}
         run: "$Env:PERCY_TOKEN="PERCY"""
-
       - name: Run TestCafe tests
         run: npm run test
