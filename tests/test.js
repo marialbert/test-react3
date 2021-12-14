@@ -1,7 +1,6 @@
 import { Selector } from 'testcafe';
 import percySnapshot from '@percy/testcafe';
 
-
 fixture('MyFixture')
   .page('http://localhost:3000/test-react3');
 
