@@ -2,7 +2,7 @@ import { Selector } from 'testcafe';
 import percySnapshot from '@percy/testcafe';
 
 fixture('MyFixture')
-  .page('http://localhost:3000');
+  .page('./index.js');
 
 test('test', async t => {
   await t.typeText('#root .TodoSearch', 'Mabe test');
