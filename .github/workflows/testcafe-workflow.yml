@@ -12,8 +12,14 @@ jobs:
       - name: Check out the repository
         uses: actions/checkout@v1
 
+      - name: testcafe action workflow
+        uses: ./
+
       - name: 'Building web application to be tested'
         run: npm install
+
+      - name: 'run web appication'
+        run: npm run start
       
       - shell: pwsh
         run: $Env:PERCY_TOKEN="${{ secrets.PERCY_TOKEN }}"
