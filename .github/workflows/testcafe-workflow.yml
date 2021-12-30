@@ -5,18 +5,15 @@ env:
         BROWSERSTACK_USERNAME: "${{ secrets.BROWSERSTACK_USERNAME }}"
         PERCY_TOKEN: "${{ secrets.PERCY_TOKEN }}" 
 jobs:
-  build:
-    name: Run Tests Across Node.js Versions and Operating Systems
-    runs-on: ${{ matrix.os }}
-    strategy:
-      matrix:
-        os: [ubuntu-latest, windows-latest]
-        node: [8, 10, 12]
+  test:
+    name: Run TestCafe tests
+    runs-on: windows-latest
     steps:
-      - uses: actions/setup-node@v1
-        with:
-          node-version: ${{ matrix.node }}
-      - uses: actions/checkout@v1
+      - name: Check out the repository
+        uses: actions/checkout@v1
+        
+      - name: 'Building web application to be tested'
+        run: npm install
       
       - shell: pwsh
         run: $Env:PERCY_TOKEN="${{ secrets.PERCY_TOKEN }}"
