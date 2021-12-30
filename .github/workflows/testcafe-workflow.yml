@@ -7,13 +7,10 @@ env:
 jobs:
   test:
     name: Run TestCafe tests
-    runs-on: windows-latest
+    runs-on: [macos-latest, windows-latest]
     steps:
       - name: Check out the repository
         uses: actions/checkout@v1
-        
-      - name: 'Building web application to be tested'
-        run: npm install
       
       - shell: pwsh
         run: $Env:PERCY_TOKEN="${{ secrets.PERCY_TOKEN }}"
