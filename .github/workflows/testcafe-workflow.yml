@@ -1,15 +1,22 @@
-- name: "First example"
-  url: https://marialbert.github.io/test-react3
-
-
-name: End-to-End Tests
-on: [push]
-
+name: End-to-End tests
+on: [push, pull_request]
 env:
         BROWSERSTACK_ACCESS_KEY: "${{ secrets.BROWSERSTACK_ACCESS_KEY }}"
         BROWSERSTACK_USERNAME: "${{ secrets.BROWSERSTACK_USERNAME }}"
-
+        PERCY_TOKEN: "${{ secrets.PERCY_TOKEN }}" 
 jobs:
   test:
-    name: Run TestCafe Tests
+    name: Run TestCafe tests
     runs-on: windows-latest
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v1
+        
+      - name: 'Building web application to be tested'
+        run: npm install
+      
+      - shell: pwsh
+        run: $Env:PERCY_TOKEN="${{ secrets.PERCY_TOKEN }}"
+      
+      - name: Run TestCafe tests
+        run: npm run test
