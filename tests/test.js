@@ -6,8 +6,8 @@ import percySnapshot from '@percy/testcafe';
 
 fixture('MyFixture')
    // .page('http://192.168.0.196:3000/test-react3');
-      .page('http://localhost:3000/test-react3');
-   // .page('https://marialbert.github.io/test-react3/');
+  //  .page('http://localhost:3000/test-react3');
+     .page('https://marialbert.github.io/test-react3/');
 
 test('test', async t => {
 
