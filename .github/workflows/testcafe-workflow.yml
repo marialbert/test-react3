@@ -1,5 +1,5 @@
 name: End-to-End tests
-on: [push, pull_request]
+on: [pull_request]
 env:
         BROWSERSTACK_ACCESS_KEY: "${{ secrets.BROWSERSTACK_ACCESS_KEY }}"
         BROWSERSTACK_USERNAME: "${{ secrets.BROWSERSTACK_USERNAME }}"
@@ -19,4 +19,4 @@ jobs:
         run: $Env:PERCY_TOKEN="${{ secrets.PERCY_TOKEN }}"
       
       - name: Run TestCafe tests
-        run: npm run test
+        run: npm run test 
