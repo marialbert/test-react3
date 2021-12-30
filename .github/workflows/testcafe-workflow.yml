@@ -7,7 +7,7 @@ env:
 jobs:
   test:
     name: Run TestCafe tests
-    runs-on: [macos-latest, windows-latest]
+    runs-on: windows-latest
     steps:
       - name: Check out the repository
         uses: actions/checkout@v1
