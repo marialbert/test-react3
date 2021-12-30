@@ -4,7 +4,7 @@ import percySnapshot from '@percy/testcafe';
 const url='http://localhost:3000/test-react3'
 
 fixture('MyFixture')
-  .page(url);
+  .page('https://github.com/marialbert/test-react3.git');
   //.page('http://localhost:3000/test-react3');
   //.page('https://marialbert.github.io/test-react3/');
 
