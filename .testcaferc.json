@@ -1,7 +1,4 @@
 { 
-    "userVariables": {
-        "url": "http://localhost:3000/test-react3"
-    },
     "browsers": "chrome",
     "skipJsErrors": true, 
     "selectorTimeOut": 5000,

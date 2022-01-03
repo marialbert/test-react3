@@ -19,4 +19,6 @@ jobs:
         run: $Env:PERCY_TOKEN="${{ secrets.PERCY_TOKEN }}"
       
       - name: Run TestCafe tests
-        run: npm run test:configurationFile
+        uses: DevExpress/testcafe-action@latest
+        with:
+          args: "chrome tests"
