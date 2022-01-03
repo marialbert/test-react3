@@ -2,6 +2,7 @@ import { Selector } from 'testcafe';
 import { ClientFunction } from 'testcafe';
 import percySnapshot from '@percy/testcafe';
 
+
 //const url='http://localhost:3000/test-react3'
 
 fixture('MyFixture')
