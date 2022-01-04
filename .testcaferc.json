@@ -1,0 +1,13 @@
+{ 
+    "browsers": "chrome",
+    "skipJsErrors": true, 
+    "selectorTimeOut": 5000,
+    "assertionTimeOut": 5000,
+    "pageLoadTimeOut": 5000,
+    "speed": 0.5,
+    "hostname": "localhost",
+    "pageRequestTimeout": 8000,
+    "browserInitTimeout": 180000,
+    "retryTestPages": true,
+    "quarantineMode": true  
+} 
