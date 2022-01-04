@@ -14,7 +14,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "percy exec -- testcafe chrome tests --hostname localhost",
+    "test": "percy exec -- testcafe chrome tests --skips-js-errors",
     "test:configurationFile": "testcafe",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
